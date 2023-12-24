@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your CSS file */
+.hoverStyle {
+    text-transform: uppercase;
+    transition: transform 300ms ease-in-out;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hoverStyle:hover {
+    transform: scale(1.1);
+}
+.hoverStyle2 {
+    text-transform: capitalize;
+    transition: transform 300ms ease-in-out;
+}
+
+.hoverStyle2:hover {
+    transform: scale(1.1);
 }
